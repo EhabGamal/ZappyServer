@@ -1,9 +1,14 @@
 {
     "name": "zappy-server",
+    "description": "Zappy - The Pain Killer - Node Server",
     "version": "1.0.0",
-    "private": true,
+    "author": {
+        "name": "Ehab Gamal",
+        "email": "ehab.g.sh@gmail.com",
+        "url": "http://github.com/EhabGamal"
+    },
     "scripts": {
-        "start": "node ./bin/server"
+        "start": "node ./bin/server.js"
     },
     "dependencies": {
         "body-parser": "~1.18.2",
