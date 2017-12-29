@@ -1,0 +1,19 @@
+{
+    "name": "zappy-server",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/server"
+    },
+    "dependencies": {
+        "body-parser": "~1.18.2",
+        "debug": "~2.6.9",
+        "express": "~4.15.5",
+        "jsonwebtoken": "^8.1.0",
+        "lodash": "^4.17.4",
+        "mongoose": "^5.0.0-rc0",
+        "passport": "^0.4.0",
+        "passport-jwt": "^3.0.1",
+        "twitter": "^1.7.1"
+    }
+}
