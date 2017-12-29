@@ -1,9 +1,9 @@
-var _ = require('lodash');
-var jwt = require('jsonwebtoken');
-var express = require('express');
-
-var config = require('../config/config');
-var passConfig = require('../config/passport');
+var _ = require('lodash'),
+    jwt = require('jsonwebtoken'),
+    express = require('express'),
+    
+    config = require('../config/config'),
+    passConfig = require('../config/passport');
 
 // Creating router object to handle auth routes
 var router = express.Router();

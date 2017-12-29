@@ -10,6 +10,17 @@ const config = {
             name: 'zappytpk',
             password: 'F!cti0n.F0ne'
         }],
+        socialAuth: {
+            twitter: {
+                consumer_key: 'your-twitter-consumer-key',
+                consumer_secret: 'your-twitter-consumer-secret',
+                access_token_key: 'your-twitter-access-token-key',
+                access_token_secret: 'your-twitter-access-token-secret'
+            },
+            slack: {
+                token: 'your-slack-token'
+            }
+        }
     },
     'test': {
 
@@ -23,6 +34,17 @@ const config = {
             name: 'zappytpk',
             password: 'F!cti0n.F0ne'
         }],
+        socialAuth: {
+            twitter: {
+                consumer_key: process.env.TWITTER_CONSUMER_KEY || '',
+                consumer_secret: process.env.TWITTER_CONSUMER_SECRET || '',
+                access_token_key: process.env.TWITTER_TOKEN_KEY || '',
+                access_token_secret: process.env.TWITTER_TOKEN_SECRET || ''
+            },
+            slack: {
+                token: process.env.SLACK_TOKEN || 'your-slack-token'
+            }
+        }
     }
 }
 
