@@ -27,7 +27,7 @@ const config = {
     },
     'production': {
         port: process.env.PORT || 3000,
-        db: process.env.MONGO_URI || '',
+        db: process.env.MONGODB_URI || '',
         secret: process.env.JWT_SECRET || '~!@#$%[L+R=J]^&*()',
         users: [{
             id: 1,
