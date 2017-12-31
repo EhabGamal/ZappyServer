@@ -1,6 +1,7 @@
 var bodyParser = require('body-parser'),
     express = require('express'),
-    passport = require('passport');
+    passport = require('passport'),
+    cors = require('cors');
 
 var passConfig = require('./config/passport');
 passport.use(passConfig.strategy);
@@ -16,6 +17,8 @@ app.use(passport.initialize());
 // Using bodyparser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+// Added CORS middleware for Access-Control-Allow-Origin
+app.use(cors());
 
 // Register available routes to the app
 app.use('/login', auth);
